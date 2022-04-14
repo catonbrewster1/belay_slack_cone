@@ -1,22 +1,22 @@
-# Final Project: Belay (a Slack clone)
-### Author: Caton Brewster
+# Belay (a Slack clone)
+Author: Caton Brewster
 
 
-## How to Run 
-1. From within the project directory, run the following code in the command line: 
-```
-sqlite3 db/belay.db < db/20220307T160000_create_tables.sql
-```
-to create the necessary tables in the database. 
+## How to Launch 
+From within the project directory:
+1. Run the following code in the command line to create the necessary tables in the database: 
+    ```
+    sqlite3 db/belay.db < db/20220307T160000_create_tables.sql
+    ```
 
-2. To launch the app by running the following code in the command line: 
-```
-python app.py
-```
+2. Run the following code in the command line to launch the server: 
+    ```
+    python app.py
+    ```
 
 3. Select the URL returned on the console to visit the site, e.g. "* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)"
 
-##About Belay
+## About Belay
 Belay is a website that lets users send and read real-time chat messages that are organized into rooms called Channels. Any user can create a new channel by supplying a display name. The channel menu indicates how many new messages have been posted to that channel that the user hasn't read yet. Messages may be threaded as Replies in response to a message in a channel. Messages in the channel will display how many replies they have if that number is greater than zero. 
 
 ## Features of the Website
